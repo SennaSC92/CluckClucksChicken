@@ -25,3 +25,5 @@ Cart: for the cart I have created some JavaScript which will ensure the overall 
 paymentPage.html: For this page I created the following:
 
 Collection/Delivery Selection: when collection is selected only the payment card info is visible, when the delivery is selected it will bring up input fields for address entry. I have a complete purchase button which needs to have an onclick function created for form validation as this project is still WIP.
+
+I decided to make a modal payment section rather than a new page. so all PaymentPage docs were kept for reference.
