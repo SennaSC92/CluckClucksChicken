@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <!--Bootstrap Link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Link for Icons -->        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <!-- Link for Font Awesome-->
+        <script src="https://kit.fontawesome.com/2bce9dd775.js" crossorigin="anonymous"></script>
+
+        <!-- how to link to css-->
+        <link href="orderPage.css" rel="stylesheet" type="text/css">
+
+        <!-- JS Line -->
+        <script src="payment.js" async></script>
+
+
+        <!-- how to link to font's-->
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+        <title>Order</title>
+
+    </head>
+
+    <body>
+
+        <div class="navbar-toggleable navbar-fixed-top navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Navbar brand/logo and how to make it clickable so it returns to a certain page, home for instance-->
+                <a class="navbar-brand navbar-right order-sm-1" href="index.html">Cluck Clucks Chicken</a>
+                <!--Create button toggler-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-header">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="burgers-title">
+            <h2 style="font-size: 60px">Burgers</h2>
+        </div>
+        <div class="container-fluid" id="burgers">
+            <br>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Southern Fried Chicken Burger</h5>
+                    <p>Southern fried chicken breast, lettuce, tomatoes, onions and pepperjack cheese, in a brioche bun with our famous special house sauce. </p>
+                </div>
+
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£8.95</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Grilled Chicken Burger</h5>
+                    <p>Freshly grilled chicken breast, lettuce, tomatoes, onions in a brioche bun with mayo.</p>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price" ><b>£7.95</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Grilled Chicken & Bacon Burger</h5>
+                    <p>Freshly grilled chicken breast, crispy bacon, lettuce, tomatoes, onions and smoky cheese in a brioche bun with smoky bbq sauce.</p>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£9.95</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="freshChicken">
+            <h3 style="font-size: 60px">Fresh Chicken</h3>
+        </div>
+        <div class="container-fluid" id="F-chick">
+            <br>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Grilled Chicken Breast</h5>
+                    <p>Comes with a salad and choice of rice or chips </p>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£9.95</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Grilled Chicken Wings</h5>
+                    <p>10 succulent wings, comes with a salad and choice of rice or chips </p>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£11.95</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Grilled Chicken Drumsticks</h5>
+                    <p>Comes with salad and choice of chips or rice.</p>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£9.95</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="Salads">
+            <h3 style="font-size: 60px">Salads</h3>
+        </div>
+        <div class="container-fluid" id="Sal-Men">
+            <br>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Chicken Caesar Salad </h5>
+                    <p>Classic caesar salad with our homemade caesar dressing.</p>
+                </div>
+
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£7.95</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Chicken, Avocado & Bacon Salad </h5>
+                    <p>Grilled chicken, avocado, bacon, fresh salad leaves, tomatoes, onions and our special house dressing. </p>
+                </div>
+
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£8.95</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="Sides">
+            <h3 style="font-size: 60px">Sides</h3>
+        </div>
+        <div class="container-fluid" id="Si-Men">
+            <br>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Small Chips</h5>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£2.00</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Large Chips</h5>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£3.00</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Onion Rings</h5>
+                    <p>10 Pieces</p>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£2.50</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="shop-item-title">Coleslaw</h5>
+                    <p>Large portions only, handmade in house</p>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£3.00</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="Drinks">
+            <h3 style="font-size: 60px">Drinks</h3>
+        </div>
+        <div class="container-fluid" id="dr-men">
+
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="dr-pad-fix shop-item-title">Pepsi 330ml</h5> </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£1.30</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="dr-pad-fix shop-item-title">Pepsi 2.5l</h5>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£3.00</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="dr-pad-fix shop-item-title">Diet Pepsi 330ml</h5>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£1.30</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="dr-pad-fix shop-item-title">Diet Pepsi 2.5l</h5>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£3.00</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="dr-pad-fix shop-item-title">Fanta 330ml</h5>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£1.30</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="dr-pad-fix shop-item-title">Fanta 2.5l</h5>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£3.00</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7"> 
+                    <h5 class="dr-pad-fix shop-item-title">7UP 330ml</h5> 
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£1.30</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+            <div class="row menu-item">
+                <div class="col-7">
+                    <h5 class="dr-pad-fix shop-item-title">7UP 2.5l</h5>
+                </div>
+                <div class="col-4 price">
+                    <h5 class="shop-item-price"><b>£1.30</b></h5>
+                </div>
+                <div class="col-1 add-to-cart">
+                    <button type="button" class="cart-btn"><i class="bi bi-cart-plus fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="cart">
+            <center><h1 style="font-size: 60px">Cart</h1></center>
+        </div>
+
+        <div class="container-fluid cart-items">
+
+        </div>
+        <div class="row" id="total-sect">
+            <div class="col-12 cart-total">
+                <h1 class="cart-total-title"><b>Total <span class="cart-total-price" style="font-size: 30px"><b>£0</b></span></b></h1>
+            </div>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="pay-section">
+            <div class="row" id="p-btn-row">
+                <div class="col-12" id="p-btn-col">
+                    <div class="orderNowButton">
+                        <button id="myBtn" type="button" class="btn-outline-success purchase-btn">Proceed to Checkout</button>
+                    </div>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal" data-backdrop="static">
+
+                        <!-- Modal content -->
+                        <div class="modal-overlay">
+                            <!-- JS link must be within the modal-content div for it to work correctly-->
+                            <script src="modal.js"></script>
+
+                            <!-- Payment Form section-->
+                            <form  id="payment-form" name="paymentForm" onsubmit="return(validateForm())">
+
+                                <div class="container-fluid" id="payment-section" method="post" required>
+
+                                    <span class="close" id="close-btn">&times;</span>
+                                    <br>
+
+                                    <!--Delivery/Collection Section-->
+                                    <div class="row-inline delivery-collection-section">
+
+
+
+                                        <label id="select">Please select: </label>
+
+                                        <input type="radio" name="optradio" onclick="deliveryAddressFunction()">
+
+                                        <label class="radio-label"> Collection</label>
+
+                                        <input type="radio" name="optradio" id="delivery" onclick="deliveryAddressFunction()"> 
+
+                                        <label class="radio-label"> Delivery</label>
+
+                                    </div>
+
+                                    <div class="row-inline" id="delivery-address" style="display: none">
+                                        <h6 id= "enterdetails"> Fill in required fields:</h6>
+                                        <div class="col" id="firstname">
+                                            <label id='firstname-label'>First Name: </label> 
+                                            <input type="text" name="fname" id="firstname-input"  maxlength="45">
+                                        </div>
+                                        <div class="col" id="surname">
+                                            <label id="surname-label">Surname: </label> 
+                                            <input type="text" name="sname"id="surname-input"  maxlength="45">
+                                        </div>
+                                        <div class="col address">
+                                            <label id="houseFlat-label">House/Flat Number: </label> 
+                                            <input type="text" name="HouseFlatNo" id="address-input" maxlength="10">
+                                        </div>
+                                        <div class="col address">
+                                            <label id="streetName-label">Street Name: </label> 
+                                            <input type="text" name="streetName" id="address-input"  maxlength="50">
+                                        </div>
+                                        <div class="col address">
+                                            <label id="town-label">Town: </label> 
+                                            <input type="text" name="town" id="address-input" maxlength="50">
+                                        </div>
+                                        <div class="col" id="postcode">
+                                            <label id="postcode-label">Postcode: </label> 
+                                            <input type="text" name="postcode" id="postcode-input">
+                                        </div>
+                                        <div class="col" id="tel">
+                                            <label id="contactNo-label">Contact Number: </label> 
+                                            <input type="tel"  name="contactNo" id="tel-input" maxlength="11">
+                                        </div>
+                                        <div class="col" id="email">
+                                            <label id="email-label">Email: </label> 
+                                            <input type="email" name="email" id="email-input" placeholder="example@gmail.com" maxlength="50">
+                                        </div>
+                                    </div>
+                                    <div class="row" >
+                                        <div class="col-6" id="paymentdetails">
+                                            <h3><b>Payment</b></h3>
+                                            <label><b> Accepted Cards</b></label>
+                                        </div>
+                                        <div class="row-inline">
+                                            <span> <i class="fa-brands fa-cc-visa fa-2x" style="color: #C7280C"></i> </span>
+
+                                            <span> <i class="fa-brands fa-cc-mastercard fa-2x" style="color: #EEA130"> </i></span>
+
+                                            <span> <i class="fa-solid fa-credit-card fa-2x" style="color: #AC8E05"></i> </span>
+
+                                            <span> <i class="fa-brands fa-cc-amex fa-2x" style="color: #318B8B"></i> </span>
+
+                                            <div class="col" id="nameoncard">
+                                                <label id="nameoncard-label">Name on Card:</label>
+                                                <input type="text" name="nameoncard" id="nameoncard-input" placeholder="As it appears on your card"maxlength="22">
+                                            </div>
+                                            <div class="col" id="cardnumber">
+                                                <label id="cardnumber-label">Card Number:</label>
+                                                <input type="text" maxlength="16" name="cardnumber" placeholder="16 digit card number" id="cardnumber-input">
+                                            </div>
+                                            <div class="col" id="expdate">
+                                                <label id="expdate-label">Expiry Date:</label>
+                                                <input type="date" name="expdate" id="expdate-input">
+                                            </div>
+                                            <div class="col" id="CVV">
+                                                <label id="CVV-label">CVV:</label>
+                                                <input type="text" name="cvv" placeholder="last 3 digits on back of card" id="CVV-input" maxlength="3">
+                                            </div>
+                                            <div class="col" id="billing-post">
+                                                <label id="billing-post-label">Billing Postcode:</label>
+                                                <input type="text" name="billingPost" id="billing-post-input" placeholder="registered card address" maxlength="10">
+                                            </div>
+                                            <div id="P-button">
+                                                <button type="submit" id="purchase-btn" >Complete Purchase</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Bootstrap JS links-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    </body>
+</html>

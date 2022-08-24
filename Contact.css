@@ -1,0 +1,87 @@
+.container-fluid, .navbar{
+    height: auto;
+    width:100%;
+}
+
+#navbarposition{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.navbar-header{
+    display: inline-block;
+}
+
+.collapse navbar-collapse{
+    display: inline-block;
+    float: right;
+}
+
+.navbar-brand{
+    font-family: cookie, cursive;
+    font-size: 3rem;
+}
+
+.jumbotron{
+    background-image: url(Images/findusbackground.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+.jumbotron .container {
+  position:relative;
+  top:50px;
+}
+
+#findus{
+    font-family: cookie, cursive;
+    color: #D9B991;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#icons{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.fa-solid, .fa-brands{
+    color: #D9B991;
+}
+
+.colicon{
+    padding: 10px;
+}
+
+#ad_sect{
+    background-color: #262626;
+    color: white;
+    height: 400px;
+}
+
+#address{
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: cookie, cursive;
+    width: 33%;
+    text-align: center;
+    min-width: 33%;
+}
+
+#map{
+    height: 100%;
+    width: 100%;
+    min-width: 66%;
+    top: 13px;
+    left: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    position: fixed;
+    text-align: center;
+}
+

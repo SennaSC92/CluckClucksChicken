@@ -1,0 +1,163 @@
+/*Navbar Styling*/
+
+.navbar{
+    height: auto;
+    width:100%;
+}
+#navbarposition{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.navbar-header{
+    display: inline-block;
+}
+
+.collapse navbar-collapse{
+    display: inline-block;
+    float: right;
+}
+
+.navbar-brand{
+    font-family: cookie, cursive;
+    font-size: 3rem;
+}
+
+/*Delivery/Collection Section*/
+
+.delivery-collection-section{
+    font-weight: bold;
+    font-family: cookie, cursive;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+/* Payment Section */
+
+#payment-section{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    border-style:solid;
+    border-color: #262626;
+    border-width: 1px;
+    border-radius: 8px;
+    justify-content: center;
+    width: 96%;
+    -moz-box-shadow:    3px 3px 4px 5px #A6A5A4;
+    -webkit-box-shadow: 3px 3px 4px 5px #A6A5A4;
+    box-shadow:         3px 3px 4px 5px #A6A5A4;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#nameoncard, #cardnumber, #expdate, #CVV, #billing-post, .address, #postcode, #tel, #email{
+    font-weight: bold;
+    padding-top: 18px;
+    padding-bottom: 5px;
+}
+
+#delivery-address{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #payment-section{
+        max-width: 50%;  
+    }
+}
+
+#enterdetails{
+    padding-top: 10px; 
+    font-weight: bold;
+}
+
+#firstname, #surname{
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#firstname-label{
+    padding-right: 82px;
+}
+#surname-label{
+    padding-right: 98px
+}
+#houseFlat-label{
+    padding-right: 15px; 
+}
+
+#streetName-label{
+    padding-right: 70px;
+}
+
+#town-label{
+    padding-right: 124px;
+}
+
+#postcode-label{
+    padding-right: 95px;
+}
+
+#contactNo-label{
+    padding-right: 38px;
+}
+
+#email-label{
+    padding-right: 122px;
+    
+}
+
+#nameoncard-label{
+    padding-right: 34px
+}
+
+#cardnumber-label{
+    padding-right: 40px;
+}
+
+#expdate-label{
+    padding-right: 53px;
+}
+
+#CVV-label{
+    padding-right: 110px;
+}
+
+#billing-post-label{
+    padding-right: 20px;
+}
+#expdate-input{
+    width: 190px;
+    text-align: center;
+}
+
+#P-button{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+input[type="submit"]{
+    width: 95%;
+    height: 35px;
+    background-color: #64BF0A;
+    border-radius: 10px;
+    border-width: 0px;
+    font-weight: bold;
+    
+}
+
+::-webkit-input-placeholder{
+    font-size: 12px;
+    text-align: center;
+}

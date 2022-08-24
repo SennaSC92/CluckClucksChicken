@@ -1,0 +1,253 @@
+.container-fluid, .navbar{
+    height: auto;
+    width:100%;
+}
+
+#navbarposition{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.navbar-header, .collapse navbar-collapse{
+    display: inline-block;
+    
+}
+
+
+.navbar-brand{
+    font-family: cookie, cursive;
+    font-size: 3rem;
+}
+
+.shop-item-title, .shop-item-price{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.menu-item{
+    font-family: cookie, cursive;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#burgers-title, #Salads, #freshChicken, #Sides, #Drinks, #cart{
+    width: 98%;
+    margin-top: 5px;
+    padding: 2px 16px;
+    border-radius: 10px;
+    background-color: #BF4904;
+    font-family: cookie, cursive;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#burgers, #F-chick, #Sal-Men, #Si-Men, #dr-men{
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+.quantity{
+    padding: 5px;
+}
+
+.input-group-button{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.cart-btn{
+    border-style: none;
+    background-color: white;
+}
+
+.dr-pad-fix{
+    padding-top: 10px;
+}
+
+.add-to-cart{
+    text-align: center;
+    padding-top: 15px;
+
+}
+.price{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cart-quantity-input{
+    width: 32px;
+    text-align: center;
+}
+
+.cart-quantity{
+    text-align: right;
+    padding-bottom: 1%;
+}
+
+.cart-sect{
+    width: 99%;
+    padding-top: 10px;
+    margin-left: 6px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    font-family: cookie, cursive;
+}
+
+#total-sect{
+    padding-top: 10px;
+    font-family: cookie, cursive;
+}
+
+
+.cart-total-title{
+    float: right;
+    margin-right: 20px;
+}
+
+.btn-outline-success{
+    min-width: 35%;
+    font-size: 25px;
+    font-family: cookie, cursive;
+    color:white;
+    border-style: none;
+    background-color: #26A646;
+    float: right;
+}
+
+#p-btn-row{
+    padding: 10px;
+}
+
+
+/* Payment Section */
+
+#payment-form{
+    width: 100%;
+}
+input[type="text"], input[type="date"], input[type="tel"], input[type="email"]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#payment-section{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 8px;
+    justify-content: center;
+
+}
+
+#paymentdetails, .delivery-collection-section{
+    padding-top: 15px;
+}
+
+
+#nameoncard, #cardnumber, #expdate, #CVV, #billing-post, .address, #postcode, #tel, #email{
+    font-weight: bold;
+    padding-top: 18px;
+    padding-bottom: 5px;
+}
+
+#delivery-address{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #payment-section{
+        max-width: 50%;  
+    }
+}
+
+#enterdetails{
+    padding-top: 10px; 
+    font-weight: bold;
+}
+
+#firstname, #surname{
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#expdate-input{
+    float: right;
+}
+
+#billing-post-label{
+    padding-right: 20px;
+}
+#expdate-input{
+    width: 190px;
+    text-align: center;
+}
+
+#P-button{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#purchase-btn{
+    width: 95%;
+    height: 35px;
+    background-color: #64BF0A;
+    border-radius: 10px;
+    border-width: 0px;
+    font-weight: bold;
+
+}
+
+::-webkit-input-placeholder{
+    font-size: 12px;
+    text-align: center;
+}
+
+.plus-minus-input {
+    justify-content: center;
+
+}
+/*modal styling*/
+
+.modal{
+    position: fixed;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.modal-overlay{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
