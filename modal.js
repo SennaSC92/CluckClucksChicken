@@ -31,11 +31,31 @@ window.onclick = function (event) {
 function deliveryAddressFunction() {
     if (document.getElementById('delivery').checked) {
         document.getElementById('delivery-address').style.display = 'grid';
+        
     }
     else{
         document.getElementById('delivery-address').style.display = 'none';
+        
     }
 }
 
 // Validation of input fields - figure out how to do this better
 //function validateForm() { figure this out and then add in}
+
+
+
+function validateForm() {
+    if (document.getElementById('firstname-input').value == ""){
+        alert("Please enter your first name");
+        document.getElementById('firstname-input').style.borderColor = 'red';
+        return false;
+    }
+    if (document.getElementById('surname-input').value == ""){
+        alert("Please enter your surname");
+        document.getElementById('surname-input').style.borderColor = 'red';
+        return false;
+    }
+}
+
+
+

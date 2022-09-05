@@ -334,7 +334,7 @@
             <div class="row" id="p-btn-row">
                 <div class="col-12" id="p-btn-col">
                     <div class="orderNowButton">
-                        <button id="myBtn" type="button" class="btn-outline-success purchase-btn">Proceed to Checkout</button>
+                        <button id="myBtn" type="button" class="btn-outline-success">Proceed to Checkout</button>
                     </div>
 
                     <!-- The Modal -->
@@ -346,7 +346,7 @@
                             <script src="modal.js"></script>
 
                             <!-- Payment Form section-->
-                            <form  id="payment-form" name="paymentForm" onsubmit="return(validateForm())">
+                            <form  id="payment-form" name="paymentForm" onsubmit="return validateForm()">
 
                                 <div class="container-fluid" id="payment-section" method="post" required>
 
@@ -440,7 +440,7 @@
                                                 <input type="text" name="billingPost" id="billing-post-input" placeholder="registered card address" maxlength="10">
                                             </div>
                                             <div id="P-button">
-                                                <button type="submit" id="purchase-btn" >Complete Purchase</button>
+                                                <button type="submit" onclick="validateForm()" id="purchase-btn" >Complete Purchase</button>
                                             </div>
                                         </div>
                                     </div>
