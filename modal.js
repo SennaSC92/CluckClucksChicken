@@ -1,4 +1,3 @@
-
 //MODAL SECTION
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -26,6 +25,7 @@ window.onclick = function (event) {
     }
 }
 
+
 //If delivery button is clicked the fields for address input become visible
 
 function deliveryAddressFunction() {
@@ -42,20 +42,48 @@ function deliveryAddressFunction() {
 // Validation of input fields - figure out how to do this better
 //function validateForm() { figure this out and then add in}
 
+let id = (id) => document.getElementById(id);
 
+let classes = (classes) => document.getElementsByClassName(classes);
 
-function validateForm() {
-    if (document.getElementById('firstname-input').value == ""){
-        alert("Please enter your first name");
-        document.getElementById('firstname-input').style.borderColor = 'red';
-        return false;
+let fname = id("firstname-input"), sname = id("surname-input"), houseFlat = id("houseFlat-input"), street = id("street-input"),
+    town = id("town-input"), postcode = id("postcode-input"), tel = id("tel-input"), email = id("email-input"),
+    nameOnCard = id("nameoncard-input" ), cardNo = id("cardnumber-input"), expDate = id("expdate-input"), cvv = id("CVV-input"),
+    billingPost = id("billing-post-input"), form = id("payment-form"),
+    
+    errorMsg = classes("error"), successIcon = classes("success-icon"), failureIcon = classes("failure-icon");
+
+// continue event listener for all input fields.
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    validation(fname, 0, "First name cannot be blank");
+    validation(sname, 1, "Surname cannot be blank");
+    
+});
+
+let validation = (id, serial, message) => {
+    if (id.value.trim() === ""){
+        errorMsg[serial].innerHTML = message;
+        id.style.border = "2px solid red";
+        //icons
+        failureIcon[serial].style.opacity = "1";
+        successIcon[serial].style.opacity = "0";
+
     }
-    if (document.getElementById('surname-input').value == ""){
-        alert("Please enter your surname");
-        document.getElementById('surname-input').style.borderColor = 'red';
-        return false;
+
+    else {
+        errorMsg[serial].innerHTML = "";
+        id.style.border = "2px solid green";
+        //icons
+        failureIcon[serial].style.opacity = "0";
+        successIcon[serial].style.opacity = "1";
     }
 }
+
+
+
+
 
 
 

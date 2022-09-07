@@ -31,3 +31,4 @@ I decided to make a modal payment section rather than a new page. so all Payment
 Started creating a function for form validation via javascript, however this is not particulary how I want it to work so decided to take 5 and change the styling of my form.
 
 Added success/failure icons next to each input field within my form, added styling so the icons are hidden.
+Started adding Javascript for form validation.
