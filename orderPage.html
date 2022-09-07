@@ -346,7 +346,7 @@
                             <script src="modal.js"></script>
 
                             <!-- Payment Form section-->
-                            <form  id="payment-form" name="paymentForm" onsubmit="return validateForm()">
+                            <form  id="payment-form" name="paymentForm" >
 
                                 <div class="container-fluid" id="payment-section" method="post" required>
 
@@ -375,34 +375,55 @@
                                         <div class="col" id="firstname">
                                             <label id='firstname-label'>First Name: </label> 
                                             <input type="text" name="fname" id="firstname-input"  maxlength="45">
+                                            <i class="fas fa-exclamation-circle failure-icon"></i>
+                                            <i class="far fa-check-circle success-icon"></i>
+                                            <div class="error"></div>
                                         </div>
                                         <div class="col" id="surname">
                                             <label id="surname-label">Surname: </label> 
                                             <input type="text" name="sname"id="surname-input"  maxlength="45">
+                                            <i class="fas fa-exclamation-circle failure-icon"></i>
+                                            <i class="far fa-check-circle success-icon"></i>
+                                            <div class="error"></div>
                                         </div>
                                         <div class="col address">
                                             <label id="houseFlat-label">House/Flat Number: </label> 
-                                            <input type="text" name="HouseFlatNo" id="address-input" maxlength="10">
+                                            <input type="text" name="HouseFlatNo" id="houseFlat-input" maxlength="10">
+                                            <i class="fas fa-exclamation-circle failure-icon "></i>
+                                            <i class="far fa-check-circle success-icon"></i>
+                                            <div class="error"></div>
                                         </div>
                                         <div class="col address">
                                             <label id="streetName-label">Street Name: </label> 
-                                            <input type="text" name="streetName" id="address-input"  maxlength="50">
+                                            <input type="text" name="streetName" id="street-input"  maxlength="50">
+                                            <i class="fas fa-exclamation-circle failure-icon"></i>
+                                            <i class="far fa-check-circle success-icon"></i>
+                                            <div class="error"></div>
                                         </div>
                                         <div class="col address">
                                             <label id="town-label">Town: </label> 
-                                            <input type="text" name="town" id="address-input" maxlength="50">
+                                            <input type="text" name="town" id="town-input" maxlength="50">
                                         </div>
                                         <div class="col" id="postcode">
                                             <label id="postcode-label">Postcode: </label> 
                                             <input type="text" name="postcode" id="postcode-input">
+                                            <i class="fas fa-exclamation-circle failure-icon"></i>
+                                            <i class="far fa-check-circle success-icon"></i>
+                                            <div class="error"></div>
                                         </div>
                                         <div class="col" id="tel">
                                             <label id="contactNo-label">Contact Number: </label> 
                                             <input type="tel"  name="contactNo" id="tel-input" maxlength="11">
+                                            <i class="fas fa-exclamation-circle failure-icon"></i>
+                                            <i class="far fa-check-circle success-icon"></i>
+                                            <div class="error"></div>
                                         </div>
                                         <div class="col" id="email">
                                             <label id="email-label">Email: </label> 
                                             <input type="email" name="email" id="email-input" placeholder="example@gmail.com" maxlength="50">
+                                            <i class="fas fa-exclamation-circle failure-icon"></i>
+                                            <i class="far fa-check-circle success-icon"></i>
+                                            <div class="error"></div>
                                         </div>
                                     </div>
                                     <div class="row" >
@@ -422,22 +443,37 @@
                                             <div class="col" id="nameoncard">
                                                 <label id="nameoncard-label">Name on Card:</label>
                                                 <input type="text" name="nameoncard" id="nameoncard-input" placeholder="As it appears on your card"maxlength="22">
+                                                <i class="fas fa-exclamation-circle failure-icon"></i>
+                                                <i class="far fa-check-circle success-icon"></i>
+                                                <div class="error"></div>
                                             </div>
                                             <div class="col" id="cardnumber">
                                                 <label id="cardnumber-label">Card Number:</label>
                                                 <input type="text" maxlength="16" name="cardnumber" placeholder="16 digit card number" id="cardnumber-input">
+                                                <i class="fas fa-exclamation-circle failure-icon"></i>
+                                                <i class="far fa-check-circle success-icon"></i>
+                                                <div class="error"></div>
                                             </div>
                                             <div class="col" id="expdate">
                                                 <label id="expdate-label">Expiry Date:</label>
                                                 <input type="date" name="expdate" id="expdate-input">
+                                                <i class="fas fa-exclamation-circle failure-icon"></i>
+                                                <i class="far fa-check-circle success-icon"></i>
+                                                <div class="error"></div>
                                             </div>
                                             <div class="col" id="CVV">
                                                 <label id="CVV-label">CVV:</label>
                                                 <input type="text" name="cvv" placeholder="last 3 digits on back of card" id="CVV-input" maxlength="3">
+                                                <i class="fas fa-exclamation-circle failure-icon"></i>
+                                                <i class="far fa-check-circle success-icon"></i>
+                                                <div class="error"></div>
                                             </div>
                                             <div class="col" id="billing-post">
                                                 <label id="billing-post-label">Billing Postcode:</label>
                                                 <input type="text" name="billingPost" id="billing-post-input" placeholder="registered card address" maxlength="10">
+                                                <i class="fas fa-exclamation-circle failure-icon"></i>
+                                                <i class="far fa-check-circle success-icon"></i>
+                                                <div class="error"></div>
                                             </div>
                                             <div id="P-button">
                                                 <button type="submit" onclick="validateForm()" id="purchase-btn" >Complete Purchase</button>

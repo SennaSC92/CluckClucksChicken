@@ -147,6 +147,33 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="email"]{
 
 }
 
+/* styling for icons*/
+
+form div .failure-icon, .success-icon {
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+/*change color for each icon*/
+.failure-icon, .error{
+    color: red;
+}
+
+.success-icon{
+    color: green;
+}
+
+/*To hide icons*/
+.failure-icon, .success-icon{
+    opacity: 0;
+}
+
+.error{
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+
 #paymentdetails, .delivery-collection-section{
     padding-top: 15px;
 }
@@ -179,15 +206,11 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="email"]{
     padding-top: 20px;
 }
 
-#expdate-input{
-    float: right;
-}
-
 #billing-post-label{
     padding-right: 20px;
 }
 #expdate-input{
-    width: 190px;
+    
     text-align: center;
 }
 
@@ -205,6 +228,10 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="email"]{
     border-width: 0px;
     font-weight: bold;
 
+}
+
+#purchase-btn:hover {
+    opacity: 0.8;
 }
 
 ::-webkit-input-placeholder{

@@ -27,3 +27,7 @@ paymentPage.html: For this page I created the following:
 Collection/Delivery Selection: when collection is selected only the payment card info is visible, when the delivery is selected it will bring up input fields for address entry. I have a complete purchase button which needs to have an onclick function created for form validation as this project is still WIP.
 
 I decided to make a modal payment section rather than a new page. so all PaymentPage docs were kept for reference.
+
+Started creating a function for form validation via javascript, however this is not particulary how I want it to work so decided to take 5 and change the styling of my form.
+
+Added success/failure icons next to each input field within my form, added styling so the icons are hidden.
