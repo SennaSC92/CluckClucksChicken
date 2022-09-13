@@ -32,3 +32,4 @@ Started creating a function for form validation via javascript, however this is 
 
 Added success/failure icons next to each input field within my form, added styling so the icons are hidden.
 Started adding Javascript for form validation.
+Added more JavaScript to form validation, however I am currently coming uo with an uncaught error, trying to fix this before I update anymore.
