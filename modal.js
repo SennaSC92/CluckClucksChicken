@@ -39,8 +39,7 @@ function deliveryAddressFunction() {
     }
 }
 
-// Validation of input fields - figure out how to do this better
-//function validateForm() { figure this out and then add in}
+//Validate form
 
 let id = (id) => document.getElementById(id);
 
@@ -57,8 +56,22 @@ let fname = id("firstname-input"), sname = id("surname-input"), houseFlat = id("
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    deliveryAddressFunction();
     validation(fname, 0, "First name cannot be blank");
     validation(sname, 1, "Surname cannot be blank");
+    validation(houseFlat, 2, "Please enter House/Flat number");
+    validation(street, 3, "Please enter street name");
+    validation(town, 4, "Please enter town");
+    validation(postcode, 5, "Please enter postcode");
+    validation(tel, 6, "Please enter contact number");
+    validation(email, 7, "Please enter your email address");
+    validation(nameOnCard, 8, "Please your name as it appears on your card");
+    validation(cardNo, 9, "Please enter 14 digit card number");
+    validation(expDate, 10, "Please enter expiery date");
+    validation(cvv, 11, "Please enter 3 digit CVV number");
+    validation(billingPost, 12, "Please enter the postcode registered to your card");
+
+
     
 });
 
