@@ -45,7 +45,7 @@ let id = (id) => document.getElementById(id);
 
 let classes = (classes) => document.getElementsByClassName(classes);
 
-let fname = id("firstname-input"), sname = id("surname-input"), houseFlat = id("houseFlat-input"), street = id("street-input"),
+let fname = id("name-input"), address = id("address-input"),
     town = id("town-input"), postcode = id("postcode-input"), tel = id("tel-input"), email = id("email-input"),
     nameOnCard = id("nameoncard-input" ), cardNo = id("cardnumber-input"), expDate = id("expdate-input"), cvv = id("CVV-input"),
     form = id("payment-form"),
@@ -55,18 +55,17 @@ let fname = id("firstname-input"), sname = id("surname-input"), houseFlat = id("
 // continue event listener for all input fields.
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    validation(fname, 0, "First name cannot be blank");
-    validation(sname, 1, "Surname cannot be blank");
-    validation(houseFlat, 2, "Please enter House/Flat number");
-    validation(street, 3, "Please enter street name");
-    validation(town, 4, "Please enter town");
-    validation(postcode, 5, "Please enter postcode");
-    validation(tel, 6, "Please enter contact number");
-    validation(email, 7, "Please enter your email address");
-    validation(nameOnCard, 8, "Please your name as it appears on your card");
-    validation(cardNo, 9, "Please enter 14 digit card number");
-    validation(expDate, 10, "Please enter expiery date");
-    validation(cvv, 11, "Please enter 3 digit CVV number");
+    validation(fname, 0, "Name cannot be blank");
+ 
+    validation(address, 1, "Please enter Address");
+    validation(town, 2, "Please enter town");
+    validation(postcode, 3, "Please enter postcode");
+    validation(tel, 4, "Please enter contact number");
+    validation(email, 5, "Please enter your email address");
+    validation(nameOnCard, 6, "Please your name as it appears on your card");
+    validation(cardNo, 7, "Please enter 14 digit card number");
+    validation(expDate, 8, "Please enter expiery date");
+    validation(cvv, 9, "Please enter 3 digit CVV number");
         
 });
 

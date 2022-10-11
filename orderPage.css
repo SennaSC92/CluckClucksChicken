@@ -201,7 +201,7 @@ form div .failure-icon, .success-icon {
     font-weight: bold;
 }
 
-#firstname, #surname{
+#name, #surname{
     font-weight: bold;
     padding-top: 20px;
 }
