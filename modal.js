@@ -48,15 +48,13 @@ let classes = (classes) => document.getElementsByClassName(classes);
 let fname = id("firstname-input"), sname = id("surname-input"), houseFlat = id("houseFlat-input"), street = id("street-input"),
     town = id("town-input"), postcode = id("postcode-input"), tel = id("tel-input"), email = id("email-input"),
     nameOnCard = id("nameoncard-input" ), cardNo = id("cardnumber-input"), expDate = id("expdate-input"), cvv = id("CVV-input"),
-    billingPost = id("billing-post-input"), form = id("payment-form"),
+    form = id("payment-form"),
     
     errorMsg = classes("error"), successIcon = classes("success-icon"), failureIcon = classes("failure-icon");
 
 // continue event listener for all input fields.
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-
-    deliveryAddressFunction();
     validation(fname, 0, "First name cannot be blank");
     validation(sname, 1, "Surname cannot be blank");
     validation(houseFlat, 2, "Please enter House/Flat number");
@@ -69,10 +67,7 @@ form.addEventListener("submit", (e) => {
     validation(cardNo, 9, "Please enter 14 digit card number");
     validation(expDate, 10, "Please enter expiery date");
     validation(cvv, 11, "Please enter 3 digit CVV number");
-    validation(billingPost, 12, "Please enter the postcode registered to your card");
-
-
-    
+        
 });
 
 let validation = (id, serial, message) => {
